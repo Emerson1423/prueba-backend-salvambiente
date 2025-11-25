@@ -10,7 +10,7 @@ app.disable('x-powered-by');
 
 // CORS
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:8080',
+  origin: "https://prueba-frontend-salvambiente.onrender.com",
   credentials: true
 }));
 
