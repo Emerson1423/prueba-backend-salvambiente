@@ -39,6 +39,7 @@ app.use('/api/juego2', require('./routes/juego2'));
 app.use('/api/dashboard', require('./routes/dashboard'));
 app.use('/api/soporte', require('./routes/soporte'));
 app.use('/api', require('./routes/rolesAdmin')); // bien
+app.use('/api', require('./routes/noticias'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, '0.0.0.0', () => {
