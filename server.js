@@ -10,7 +10,7 @@ app.disable('x-powered-by');
 
 // CORS
 app.use(cors({
-  origin: "https://prueba-frontend-salvambiente.onrender.com",
+  origin: "https://prueba-frontend-salvambiente.vercel.app",
   credentials: true
 }));
 
