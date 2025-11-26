@@ -28,7 +28,7 @@ router.get('/auth/google/callback',
         JWT_SECRET,
         { expiresIn: '4h' }
       );
-      res.redirect(`https://prueba-frontend-salvambiente.onrender.com/login-google?token=${token}`);
+      res.redirect(`https://prueba-frontend-salvambiente.vercel.app/login-google?token=${token}`);
       
     } else {
       // Usuario nuevo - token temporal sin rol
@@ -42,7 +42,7 @@ router.get('/auth/google/callback',
         { expiresIn: '10m' }
       );
       
-      res.redirect(`https://prueba-frontend-salvambiente.onrender.com/completar-registro-google?temp_token=${tempToken}`);
+      res.redirect(`https://prueba-frontend-salvambiente.vercel.app/completar-registro-google?temp_token=${tempToken}`);
     }
   }
 );
